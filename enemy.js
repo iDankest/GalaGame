@@ -21,7 +21,6 @@ class Enemy{
         playField.removeChild(this.sprite)
     }
     move(){
-        console.log(this)
         let newX = this.x + this.speed * this.directionX
         this.checkCollision()
         if (newX >= 0 && newX <=600 - this.width){

@@ -2,6 +2,7 @@ let playField = document.getElementById('playfield')
 
 let player
 let enemy
+let bullet
 let enemies = []
 
 function newPlayer(){ // Funcion para insertar el player dentro del HTML
@@ -13,7 +14,10 @@ function newEnemy(){
     enemy = new Enemy()
     enemy.insert()
 }
-
+function spawnBullets(){
+    bullet = new Bullet()
+    bullet.insert()
+}
 function startGame(){
     newPlayer()
     newEnemy()
@@ -36,6 +40,9 @@ window.addEventListener('keydown' , function(event){
         case 's':
             player.directionY = 1
             player.move()
+        break;
+        case ' ':
+            spawnBullets()
         break;
     }
     window.addEventListener('keyup', function (event) {
