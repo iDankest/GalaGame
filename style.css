@@ -3,7 +3,8 @@ body{
 }
 
 #playfield{
-    background-color: rgb(8, 8, 68);
+    background-image: url(sprites/Fondo.webp);
+    background-size: cover;
     width:600px;
     height: 700px;
     margin: 0 auto;
@@ -15,14 +16,17 @@ h1{
 }
 
 #player{
-    background-color: aqua;
+    background-image: url(sprites/player.png);
+    background-size: cover;
     position: absolute;
 }
 .enemy{
-    background-color: blueviolet;
+    background-image: url(sprites/maloso.png);
+    background-size: cover;
     position: absolute;
 }
 .bullet{
-    background-color: burlywood;
+    background-image: url(sprites/misil.png);
+    background-size: cover; 
     position: absolute
 }
