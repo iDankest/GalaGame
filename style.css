@@ -19,6 +19,7 @@ h1{
     background-image: url(sprites/player.png);
     background-size: cover;
     position: absolute;
+    transform: rotate(41deg);
 }
 .enemy{
     background-image: url(sprites/maloso.png);
@@ -28,5 +29,6 @@ h1{
 .bullet{
     background-image: url(sprites/misil.png);
     background-size: cover; 
-    position: absolute
+    position: absolute;
+    transform: rotate(45deg);
 }
