@@ -1,0 +1,1 @@
+let playField = document.getElementById('playfield');
