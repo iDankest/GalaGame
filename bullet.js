@@ -1,6 +1,6 @@
 class Bullet {
     constructor(){
-        this.height = 20
+        this.height = 30
         this.width = 30
         this.y = player.y + player.height / 2 - this.height /2
         this.x = player.x + player.width
