@@ -1,13 +1,19 @@
 let playField = document.getElementById('playfield')
 
 let player
+let enemy
 
 function newPlayer(){ // Funcion para insertar el player dentro del HTML
     player = new Player(0, 325)
     player.insert()
 }
-newPlayer()
 
+function newEnemy(){
+    enemy = new Enemy()
+    enemy.insert()
+}
+newEnemy()
+newPlayer()
 window.addEventListener('keydown' , function(event){
 
     switch(event.key.toLowerCase()){

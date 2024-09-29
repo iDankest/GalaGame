@@ -18,3 +18,7 @@ h1{
     background-color: aqua;
     position: absolute;
 }
+.enemy{
+    background-color: blueviolet;
+    position: absolute;
+}

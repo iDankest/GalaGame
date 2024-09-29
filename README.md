@@ -17,6 +17,7 @@ Este es mi juego Gala con JavaScript Basic
   - Asignacion de teclas de movimento
 - Bullet dara funcinalidad a las balas con su clase y demas
 - Enemy enemigos spawne +
+  - Crear Clase enemigo
 - Player funcinalidad de su movimiento +
   - crear Class Player
   - Creacion de div en el dom
