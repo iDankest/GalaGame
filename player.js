@@ -7,7 +7,7 @@ class Player{
         this.height = 50
         this.directionX = 0 // -1 Izquierda 1 Derecha
         this.directionY = 0 // -1 Arriba 1 Abajo
-        this.speed = 5
+        this.speed = 2
         this.sprite = document.createElement('div')
     }
     insert(){
