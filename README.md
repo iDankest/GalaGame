@@ -2,7 +2,7 @@
 Este es mi juego Gala con JavaScript Basic
 ## Primeros pasos
 - Crear una estructura basica
-  -HTML
+  - HTML
 - Crear unos Estilos
   - CSS
 - linkear todo
