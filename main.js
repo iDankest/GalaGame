@@ -10,6 +10,10 @@ let enemiesSpawnInterval
 function newPlayer(){ // Funcion para insertar el player dentro del HTML
     player = new Player(0, 325)
     player.insert()
+
+    movePlayerInterval = setInterval(function(){
+        gameRunning()
+      }, 10)
 }
 
 function newEnemy(){
