@@ -23,11 +23,13 @@ class Bullet {
     }
     move(){
         let newX = this.x + this.speed * this.directionX
-        this.checkCollision()
+        this.checkCollision(this)
         if (newX >= 0 && newX <=600 - this.width){
             this.x = newX
             this.sprite.style.left = this.x + 'px'
-        }
+       }else{
+        this.remove()
+       }
     }
     checkCollision(self){
         if ( enemy.x < self.x + self.width &&
