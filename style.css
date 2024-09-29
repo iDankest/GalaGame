@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(30, 27, 41);
+}
+
+.playfield{
+    background-color: rgb(8, 8, 68);
+    width: 40vw;
+    height: 60vh;
+    margin: 0 auto;
+    min-width: 400px;
+}
+h1{
+    text-align: center;
+}
