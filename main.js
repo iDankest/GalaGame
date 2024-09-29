@@ -2,6 +2,7 @@ let playField = document.getElementById('playfield')
 
 let player
 let enemy
+let enemies = []
 
 function newPlayer(){ // Funcion para insertar el player dentro del HTML
     player = new Player(0, 325)
@@ -12,8 +13,11 @@ function newEnemy(){
     enemy = new Enemy()
     enemy.insert()
 }
-newEnemy()
-newPlayer()
+
+function startGame(){
+    newPlayer()
+    newEnemy()
+}
 window.addEventListener('keydown' , function(event){
 
     switch(event.key.toLowerCase()){
@@ -39,3 +43,5 @@ window.addEventListener('keydown' , function(event){
         player.directionY = 0
       })
 })
+
+startGame()
