@@ -4,6 +4,8 @@ let player
 let enemy
 let bullet
 let enemies = []
+let movePlayerInterval
+let enemiesSpawnInterval
 
 function newPlayer(){ // Funcion para insertar el player dentro del HTML
     player = new Player(0, 325)
@@ -11,8 +13,12 @@ function newPlayer(){ // Funcion para insertar el player dentro del HTML
 }
 
 function newEnemy(){
-    enemy = new Enemy()
-    enemy.insert()
+    enemiesSpawnInterval = setInterval(function(){
+        enemy = new Enemy()
+        enemy.insert()  
+        enemies.push(enemy)
+    }, 1000)
+
 }
 function spawnBullets(){
     bullet = new Bullet()
@@ -21,6 +27,21 @@ function spawnBullets(){
 function startGame(){
     newPlayer()
     newEnemy()
+}
+function gameRunning(){
+    if (player.lives > 0){
+        player.move()
+    }else{
+        endGame()
+    }
+}
+function endGame(){
+    clearInterval(enemiesSpawnInterval)
+    clearInterval(movePlayerInterval)
+    player.remove()
+    enemies.forEach(function(enemy){
+        enemy.remove()
+    })
 }
 window.addEventListener('keydown' , function(event){
 

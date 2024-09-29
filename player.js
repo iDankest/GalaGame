@@ -2,6 +2,7 @@ class Player{
     constructor(x , y){
         this.x = x
         this.y = y
+        this.lives = 1
         this.width = 50
         this.height = 50
         this.directionX = 0 // -1 Izquierda 1 Derecha
@@ -16,6 +17,10 @@ class Player{
         this.sprite.style.top = this.y + 'px'
         this.sprite.style.left = this.x + 'px'
         playField.appendChild(this.sprite)
+    }
+    remove(){
+        playField.removeChild(this.sprite)
+        clearInterval(movePlayerInterval)
     }
     move(){
         let newX = this.x + this.speed * this.directionX

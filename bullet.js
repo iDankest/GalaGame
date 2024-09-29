@@ -32,11 +32,17 @@ class Bullet {
        }
     }
     checkCollision(self){
-        if ( enemy.x < self.x + self.width &&
+        enemies.forEach(function(enemy, index){
+          if ( enemy.x < self.x + self.width &&
             enemy.y < self.y + self.height &&
             enemy.x + enemy.width > self.x &&
             enemy.y + enemy.height > self.y) {
             enemy.remove()
+            enemies.splice(index, 1)
+            //Player.score += 1
+            //score.innerText = 'SCORE ' + Player.score
+            self.remove()
             }
-    }
+        })
+      }
 }
