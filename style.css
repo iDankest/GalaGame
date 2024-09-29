@@ -25,6 +25,7 @@ h1{
     background-image: url(sprites/maloso.png);
     background-size: cover;
     position: absolute;
+    transform: rotate(630deg);
 }
 .bullet{
     background-image: url(sprites/misil.png);
