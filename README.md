@@ -14,9 +14,11 @@ Este es mi juego Gala con JavaScript Basic
 - Se quearan varios JavaScript
 - Main (Se pillaran los elementos de dom declarando variables)
   - Insertar en el HTML player 
+  - Asignacion de teclas de movimento
 - Bullet dara funcinalidad a las balas con su clase y demas
 - Enemy enemigos spawne +
 - Player funcinalidad de su movimiento +
   - crear Class Player
   - Creacion de div en el dom
   - Insert metodo para que el player Spawne
+  - Movimiento En ambos ejes
